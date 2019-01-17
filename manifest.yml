@@ -1,0 +1,10 @@
+---
+applications:
+- name: perl-test
+  buildpacks:
+  # - https://github.com/cloudfoundry/apt-buildpack.git
+  - php_buildpack
+  memory: 4G
+  disk_quota: 4G
+  env:
+    BP_DEBUG: true
